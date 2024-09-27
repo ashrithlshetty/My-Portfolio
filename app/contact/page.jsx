@@ -1,5 +1,5 @@
 "use client"
-
+import emailjs from "emailjs-com";
 import{Button} from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
@@ -31,8 +31,35 @@ const info = [
   },
 ];
 import {motion} from "framer-motion"
+import { useState } from "react"
 const Contact = () => {
+
+  
+  const [formData, setFormData] = useState({
+    service: '',
+    message: ''
+  });
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    emailjs.send('service_6yvfcjp', 'template_s99d606', formData, '-qM_gXSV86PcNT0yq')
+      .then((response) => {
+        console.log('SUCCESS!', response.status, response.text);
+      }, (err) => {
+        console.log('FAILED...', err);
+      });
+  };
+
   return (
+    
     <motion.section
       initial={{ opacity: 0 }}
       animate={{
@@ -44,7 +71,7 @@ const Contact = () => {
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row gap-[30px]">
           <div className="xl:h-[54%] order-2 xl:order-none">
-            <form className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl">
+            <form className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl" onSubmit={handleSubmit}>
               <h3 className="text-4xl text-accent">Let's Work Together</h3>
               <p className="text-white/60">
                 I am available for freelance work. Connect with me through the
@@ -56,7 +83,7 @@ const Contact = () => {
                 <Input type="email" placeholder="Email address" />
                 <Input type="phone" placeholder="Phone Number" />
               </div>
-              <Select>
+              <Select name="service" onChange={handleChange}>
                 <SelectTrigger className="w-full">
                   <SelectValue placeholder="Select a Service" />
                 </SelectTrigger>
@@ -64,13 +91,13 @@ const Contact = () => {
                   <SelectGroup>
                     <SelectLabel>Select a Service</SelectLabel>
                     <SelectItem value="est">Web Development</SelectItem>
-                    <SelectItem value="cst">Web Development</SelectItem>
+                    {/* <SelectItem value="cst">Web Development</SelectItem> */}
                     
                   </SelectGroup>
                 </SelectContent>
               </Select>
 
-              <Textarea className="h-[200px]" placeholder="Type Your message here."/>
+              <Textarea className="h-[200px]" placeholder="Type Your message here." onChange={handleChange}/>
             <Button size="md" className="max-w-40">Send message</Button>
             </form>
           </div>
