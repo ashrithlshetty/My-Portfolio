@@ -38,7 +38,7 @@ const Photo = () => {
           viewBox="0 0 506 506"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <motion.circle
+          {/* <motion.circle
             cx="253"
             cy="253"
             r="250"
@@ -56,7 +56,7 @@ const Photo = () => {
               repeat: Infinity,
               repeatType: "reverse",
             }}
-          />
+          /> */}
         </motion.svg>
       </motion.div>
     </div>

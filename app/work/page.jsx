@@ -17,10 +17,10 @@ import WorkSliderBtns from "@/components/WorkSliderBtns";
 const projects = [
   {
     num: "01",
-    category: "Web Development",
+    category: "Appointment Management System",
     title: "Appointment Management System",
     description:
-      "A web application that allows users to book appointments with doctors.",
+      "Worked on a Doctor's Appointment System that enables users to book slots and manage appointments.Focused on front-end development using React to create an intuitive and responsive user interface.Aimed to streamline the appointment booking process, reducing booking time by 25%, and enhancing the overall user experience.",
     stack: [
       {
         name: "React.js",
@@ -32,34 +32,33 @@ const projects = [
         name: "MongoDB",
       },
     ],
-    // image:'/images/projects/project-1.png',
+    image: "/proj1.png",
 
-    live: "https://appointment-management-system.vercel.app/",
+    live: "https://appointment-mu.vercel.app/",
     github: "",
   },
 
-  //   {
-  //   num:'02',
-  //   category:'Web Development',
-  //   title:'Appointment Management System',
-  //   description:'A web application that allows users to book appointments with doctors.',
-  // stack:[
-  //   {
-  //     name:'React.js',
-  //   },
-  //   {
-  //     name:'Node.js',
-  //   },
-  //   {
-  //     name:'MongoDB',
-  //   },
-
-  // ]
-  // // image:'/images/projects/project-1.png',
-  // live:'https://appointment-management-system.vercel.app/',
-  // github:'',
-
-  // },
+  {
+    num: "02",
+    category: "Library Management System",
+    title: "MCA Library",
+    description:
+      "Developed during a one-month internship at SJEC College.Streamlined book tracking and inventory management, cutting search times by 50%.Designed a user-friendly interface and implemented features that boosted library operations",
+    stack: [
+      {
+        name: "React.js",
+      },
+      {
+        name: "Node.js",
+      },
+      {
+        name: "MongoDB"
+      }
+    ],
+    video: "/proj1.mp4",
+    live: "https://sjec-mca-library.onrender.com",
+    github: "https://github.com/kaushikkilangodi/Library",
+  },
 ];
 
 const Work = () => {
@@ -144,7 +143,7 @@ const handleSlideChange = (swiper) => {
                     <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
 
                     <div realtive w-full h-full>
-                      <Image src={project.image} fill className="object-cover" alt=""/>
+                      <Image src={project.image} fill className="object-cover"  alt=""/>
                     </div>
                   </div>
                   
