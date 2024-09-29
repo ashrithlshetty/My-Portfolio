@@ -35,7 +35,7 @@ const projects = [
     image: "/proj1.png",
 
     live: "https://appointment-mu.vercel.app/",
-    github: "",
+    github: "https://github.com/kaushikkilangodi/Appointment-Management-System",
   },
 
   {
@@ -52,8 +52,8 @@ const projects = [
         name: "Node.js",
       },
       {
-        name: "MongoDB"
-      }
+        name: "MongoDB",
+      },
     ],
     video: "/proj1.mp4",
     live: "https://sjec-mca-library.onrender.com",
