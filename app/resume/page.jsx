@@ -1,7 +1,7 @@
 "use client";
 
 import {FaHtml5,FaCss3,FaJs,FaReact,FaNodeJs} from "react-icons/fa"
-import { SiTailwindcss,SiNextdotjs } from "react-icons/si";
+import { SiTailwindcss,SiExpress,SiDjango,SiMongodb,SiMysql } from "react-icons/si";
 
 
 const about = {
@@ -10,11 +10,11 @@ const about = {
   info: [
     {
       fieldName: "Name",
-      fieldValue: "Kaushik K",
+      fieldValue: "Ashrith Shetty",
     },
     {
       fieldName: "Phone",
-      fieldValue: "+91 9482798430",
+      fieldValue: "+91 9480136388",
     },
     {
       fieldName: "Experience",
@@ -22,7 +22,7 @@ const about = {
     },
     {
       fieldName: "Email",
-      fieldValue: "kaushikkilangodi@gmail.com",
+      fieldValue: "ashrithshetty260@gmail.com",
     },
     {
       fieldName: "Place",
@@ -66,17 +66,17 @@ const education = {
       duration: "Oct2022 -Sept 2024",
     },
     {
-      institution: "Govinda Dasa College",
-      degree: "Bachelor of Computer Application",
+      institution: "Vijaya College Mulki",
+      degree: "Bachelor of Science",
       duration: "June 2019 - Sept 2022",
     },
     {
-      institution: "Sri Chaitanya PU College",
+      institution: "SDPT PU College Kateel",
       degree: "Pre University",
       duration: "June 2017 - May 2019",
     },
     {
-      institution: "Delhi Public School",
+      institution: "SDPT High School Kateel",
       degree: "High School",
       duration: "June 2007 - May 2017",
     },
@@ -109,13 +109,25 @@ const skills={
       name:"Tailwind CSS",
     },
     {
-      icon:<SiNextdotjs/>,
-      name:"Next.js",
-    },
-    {
       icon:<FaNodeJs/>,
       name:"Node.js",
     },
+    {
+      icon:<SiExpress />,
+      name:"Express.js",
+    },
+    {
+      icon:<SiDjango />,
+      name:"Django",
+    },
+    {
+      icon:<SiMongodb />,
+      name:"MongoDB",
+    },
+    {
+      icon:<SiMysql />,
+      name:"MySQL",
+    }
   ]
 }
 

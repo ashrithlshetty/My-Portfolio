@@ -40,13 +40,19 @@ const projects = [
 
   {
     num: "02",
-    category: "Library Management System",
-    title: "MCA Library",
+    category: "Family Fund Tracker",
+    title: "Payment Managment System",
     description:
-      "Developed during a one-month internship at SJEC College.Streamlined book tracking and inventory management, cutting search times by 50%.Designed a user-friendly interface and implemented features that boosted library operations",
+      "I developed a web application , which can manage the Payment made by the users. I used Node.Js , Express.Js for backend and MongoDb a NOSQL database to store the details and EJS , a Template Engine for Frontend , which is a server side rendering technology to generate Dynamic web pages. It has the functionalities like get the pending status , generate bills , generate Excel sheet , and CRUD operation",
     stack: [
       {
-        name: "React.js",
+        name: "EJS",
+      },
+      {
+        name: "Passport.js",
+      },
+      {
+        name: "JWT",
       },
       {
         name: "Node.js",
@@ -55,9 +61,38 @@ const projects = [
         name: "MongoDB",
       },
     ],
-    video: "/proj1.mp4",
-    live: "https://sjec-mca-library.onrender.com",
-    github: "https://github.com/kaushikkilangodi/Library",
+    image: "/Maanila.png",
+
+    live: "",
+    github: "https://github.com/Manishndevadiga/Maanila_V1",
+  },
+
+  {
+    num: "03",
+    category: "EduTracker",
+    title: "EduTrack",
+    description:
+      "In my School Management System project, I implemented an automated certificate generation process, reducing manual effort and improving efficiency. Google OAuth was integrated for secure and seamless authentication. I used Cloudinary for file storage, enabling efficient management of images and documents. The system featured dynamic EJS pages like Admin, Student, and Staff Dashboards, streamlining school operations.",
+    stack: [
+      {
+        name: "EJS",
+      },
+      {
+        name: "Node.js",
+      },
+      {
+        name: "Google OAuth",
+      },
+      {
+        name: "Cloudinary",
+      },
+      {
+        name: "MongoDB",
+      },
+    ],
+    image: "/SMS.png",
+    live: "",
+    github: "",
   },
 ];
 

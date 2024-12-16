@@ -7,17 +7,13 @@ const stats = [
     text: "Years of Experience",
   },
   {
-    num: 2,
+    num: 3,
     text: "Projects Completed",
   },
   {
-    num: 7,
-    text: "Technologies mastered",
-  },
-  {
     num: 10,
-    text: "Code commits",
-  },
+    text: "Technologies mastered",
+  }
 ];
 const Stats = () => {
   return (

@@ -12,22 +12,22 @@ const info = [
   {
     icon: <FaPhoneAlt />,
     title: "Phone",
-    description: "+91 9482798430",
+    description: "+91 9480136388",
   },
   {
     icon: <FaEnvelope />,
     title: "Email",
-    description: "kaushikkilangodi@gmail.com ",
+    description: "ashrithshetty260@gmail.com ",
+  },
+  {
+    icon: <FaEnvelope />,
+    title: "Email",
+    description: "ashrithlshetty@gmail.com ",
   },
   {
     icon: <FaMapMarkerAlt />,
     title: "Address",
-    description: "Surathkal ,Mangalore 575014",
-  },
-  {
-    icon: <FaPhoneAlt />,
-    title: "Phone",
-    description: "+91 9482798430",
+    description: "Kateel ,Mangalore 574150",
   },
 ];
 import {motion} from "framer-motion"
