@@ -35,7 +35,7 @@ const projects = [
     image: "/proj1.png",
 
     live: "https://appointment-mu.vercel.app/",
-    github: "https://github.com/kaushikkilangodi/Appointment-Management-System",
+    github: "https://github.com/ashrithlshetty/Healthcare-Appointment",
   },
 
   {
